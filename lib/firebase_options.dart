@@ -14,9 +14,6 @@ import 'package:flutter/foundation.dart'
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
-
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -43,8 +40,8 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static FirebaseOptions web = FirebaseOptions(
-    apiKey: dotenv.env['WEB_API_KEY']!,
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDumwDGMZNeM6SZA5XjqYboxqjkjgG31E4',
     appId: '1:1057763001573:web:657e1bc1ab793dd700c00c',
     messagingSenderId: '1057763001573',
     projectId: 'notes-21820',
@@ -53,16 +50,16 @@ class DefaultFirebaseOptions {
     measurementId: 'G-NW0REW4294',
   );
 
-  static FirebaseOptions android = FirebaseOptions(
-    apiKey: dotenv.env['ANDROID_API_KEY']!,
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBqpwHKV-EP9K7CPgbZJRM468KvnR9e5fg',
     appId: '1:1057763001573:android:18274687557acee900c00c',
     messagingSenderId: '1057763001573',
     projectId: 'notes-21820',
     storageBucket: 'notes-21820.firebasestorage.app',
   );
 
-  static FirebaseOptions ios = FirebaseOptions(
-    apiKey: dotenv.env['IOS_API_KEY']!,
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDP69dhDe-d2AIbVaMjPM5XUG8Wld7wFJk',
     appId: '1:1057763001573:ios:7a98f4831198645f00c00c',
     messagingSenderId: '1057763001573',
     projectId: 'notes-21820',
@@ -70,8 +67,8 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.binus.notes',
   );
 
-  static FirebaseOptions macos = FirebaseOptions(
-    apiKey: dotenv.env['IOS_API_KEY']!,
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDP69dhDe-d2AIbVaMjPM5XUG8Wld7wFJk',
     appId: '1:1057763001573:ios:7a98f4831198645f00c00c',
     messagingSenderId: '1057763001573',
     projectId: 'notes-21820',
@@ -79,8 +76,8 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.binus.notes',
   );
 
-  static FirebaseOptions windows = FirebaseOptions(
-    apiKey: dotenv.env['WEB_API_KEY']!,
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDumwDGMZNeM6SZA5XjqYboxqjkjgG31E4',
     appId: '1:1057763001573:web:b1d1e88e8d7e00df00c00c',
     messagingSenderId: '1057763001573',
     projectId: 'notes-21820',
